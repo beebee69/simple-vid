@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Simple Video Chat</title>
+<meta charset="utf-8" />
+<meta name="description" content="WebAV Video Chat" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<base target="_blank">
+</head>
+<body>
+<div id='container'>
+            <div id='videos'>
+                <video id='localVideo' autoplay muted></video>
+                <video id='remoteVideo' autoplay></video>
+            </div>
+
+            <div id='textareas'>
+<textarea id="dataChannelSend" disabled placeholder="Press Start, enter some text, then press Send."></textarea>
+<textarea id="dataChannelReceive" disabled></textarea>
+</div>
+
+            <button id="sendButton" disabled>Send</button>
+        </div>
+
+        <script src='/socket.io/socket.io.js'></script>
+        <script src='js/lib/adapter.js'></script>
+        <script src='js/main.js'></script>
+</body>
+</html>
