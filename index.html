@@ -4,15 +4,10 @@
 <title>Simple Video Chat</title>
 <meta charset="utf-8" />
 <meta name="description" content="WebAV Video Chat" />
-<link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/main.css"
 <base target="_blank">
 </head>
 <body>
-<p class="text-centre">STREAMING VIDEO CHAT APPLICATION</p>
-<p class="text-centre">MADE BY</p>
-<p class="text-centre">AKINOLA ABIOLA MICHAEL</p>
-<p class="text-centre">MATRIC NO: CNAS/2010/034.</p>
 <div id='container'>
             <div id='videos'>
                 <video id='localVideo' autoplay muted></video>
@@ -20,12 +15,11 @@
             </div>
 
             <div id='textareas'>
-<textarea id="dataChannelSend" disabled placeholder="Press Start, enter some text, then press Send."></textarea>
+<textarea id="dataChannelSend" enabled placeholder="Press Start, enter some text, then press Send."></textarea>
 <textarea id="dataChannelReceive"enabled></textarea>
 </div>
 
             <button id="sendButton" enabled>Send</button>
-            <button class="btn btn-large btn-block btn-primary" type="button">Start</button>
         </div>
 
         <script src='/socket.io/socket.io.js'></script>
