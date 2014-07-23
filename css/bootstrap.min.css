@@ -38,7 +38,7 @@ line-height: 1.3em;
 margin: 0 0 1.5em 0;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 /* hack! to detect non-touch devices */
   div#links a {
 line-height: 0.8em;
@@ -207,13 +207,13 @@ video {
   width: 100%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
   h1 {
     font-size: 24px;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   button:active {
     background-color: darkRed;
   }
@@ -222,7 +222,7 @@ video {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500x) {
   h1 {
     font-size: 20px;
   }
