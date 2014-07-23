@@ -12,19 +12,23 @@
 <p class="text-centre">MADE BY</p>
 <p class="text-centre">AKINOLA ABIOLA MICHAEL</p>
 <p class="text-centre">CNAS/2010/034</p>
-<div id='container'>
-            <div id='videos'>
-                <video id='localVideo' autoplay muted></video>
-                <video id='remoteVideo' autoplay></video>
-            </div>
 
-            <div id='textareas'>
-<textarea id="dataChannelSend" enabled placeholder="Press Start, enter some text, then press Send."></textarea>
-<textarea id="dataChannelReceive"enabled></textarea>
+<div id="container">
+  <div id="card">
+    <div id="local">
+      <video width="100%" height="100%" id="localVideo" autoplay="autoplay"/>
+    </div>
+    <div id="remote">
+      <video width="100%" height="100%" id="remoteVideo" autoplay="autoplay">
+      </video>
+      <div id="mini">
+        <video width="100%" height="100%" id="miniVideo" autoplay="autoplay" />
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+  </div>
 </div>
-
-            <button id="sendButton" enabled>Send</button>
-        </div>
 
         <script src='/socket.io/socket.io.js'></script>
         <script src='js/lib/adapter.js'></script>
