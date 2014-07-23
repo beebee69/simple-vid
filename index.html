@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <meta name="description" content="WebAV Video Chat" />
 <link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/main.css"
 <base target="_blank">
 </head>
 <body>
@@ -16,10 +17,11 @@
 
             <div id='textareas'>
 <textarea id="dataChannelSend" disabled placeholder="Press Start, enter some text, then press Send."></textarea>
-<textarea id="dataChannelReceive" disabled></textarea>
+<textarea id="dataChannelReceive"enabled></textarea>
 </div>
 
-            <button id="sendButton" disabled>Send</button>
+            <button id="sendButton" enabled>Send</button>
+            <button class="btn btn-large btn-block btn-primary" type="button">Start</button>
         </div>
 
         <script src='/socket.io/socket.io.js'></script>
